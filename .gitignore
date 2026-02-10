@@ -1,0 +1,23 @@
+# Binary
+jmake
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test/build artifacts
+*.test
+*.out
+coverage.txt
+
+bin/*
+
+*.log
+*.tmp
+*.bak
+*.cache
