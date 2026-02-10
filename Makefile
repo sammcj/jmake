@@ -17,10 +17,10 @@ modernize:
 	go run golang.org/x/tools/gopls/internal/analysis/modernize/cmd/modernize@latest -fix -test ./...
 
 install: build
-	cp jmake $(GOPATH)/bin/ 2>/dev/null || cp jmake /usr/local/bin/
+	cp ./bin/jmake $(GOPATH)/bin/ 2>/dev/null || cp jmake /usr/local/bin/
 
 clean:
-	rm -f jmake
+	rm -f ./bin/jmake
 
 run: build
 	./bin/jmake $(ARGS)
